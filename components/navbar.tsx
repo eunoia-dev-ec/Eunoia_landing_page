@@ -47,7 +47,6 @@ export function Navbar() {
             <Link href="#contacto" className="text-sm font-medium hover:text-primary transition-colors">
               Contacto
             </Link>
-            <ModeToggle />
           </nav>
           
           <div className="hidden md:block">
@@ -59,7 +58,6 @@ export function Navbar() {
           </div>
           
           <div className="flex items-center space-x-4 md:hidden">
-            <ModeToggle />
             <button 
               className="p-2"
               onClick={() => setIsOpen(!isOpen)}
