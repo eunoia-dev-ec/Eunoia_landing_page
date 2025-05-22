@@ -12,7 +12,7 @@ export function Logo({ className = "" }: { className?: string }) {
       <Image
         src={isDark ? "/logo-dark.png" : "/logo-light.png"}
         alt="Eunoia Solutions Logo"
-        width={120}
+        width={35}
         height={40}
         className="object-contain"
         priority
