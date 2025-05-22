@@ -39,12 +39,7 @@ export function HeroSection() {
       
       <div className="container relative mx-auto px-4 md:px-6 z-10">
         <div className="max-w-5xl mx-auto text-center">
-          <div 
-            className="stagger-item inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
-            ref={(el) => (elementsRef.current[0] = el)}
-          >
 
-          </div>
           
           <h1 
             className="stagger-item text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
