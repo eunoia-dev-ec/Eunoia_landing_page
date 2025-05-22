@@ -27,10 +27,10 @@ export function Navbar() {
       isScrolled ? "bg-background/95 backdrop-blur-md border-b" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-12 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center space-x-2">
-              <Logo />
+            <Link href="/" className="flex items-center h-full">
+              <Logo className="w-auto h-8" />
             </Link>
           </div>
           

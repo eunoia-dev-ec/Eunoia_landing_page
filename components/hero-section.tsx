@@ -43,8 +43,7 @@ export function HeroSection() {
             className="stagger-item inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
             ref={(el) => (elementsRef.current[0] = el)}
           >
-            <span className="flex h-2 w-2 rounded-full bg-primary"></span>
-            Innovación tecnológica para Ecuador desde 2025
+
           </div>
           
           <h1 
