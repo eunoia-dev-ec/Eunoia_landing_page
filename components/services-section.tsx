@@ -132,7 +132,7 @@ export function ServicesSection() {
           className="stagger-item text-center"
           ref={(el) => (elementsRef.current[4] = el)}
         >
-          <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
             <Link href="#contacto">
               Solicita una demostración personalizada
             </Link>

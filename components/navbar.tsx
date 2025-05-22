@@ -50,7 +50,7 @@ export function Navbar() {
           </nav>
           
           <div className="hidden md:block">
-            <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+            <Button asChild variant="default" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
               <Link href="#contacto">
                 Solicita tu demo
               </Link>

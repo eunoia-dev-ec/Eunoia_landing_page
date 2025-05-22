@@ -113,7 +113,7 @@ export function ProductsSection() {
                   ))}
                 </ul>
                 
-                <Button asChild className="bg-primary hover:bg-primary/90">
+                <Button asChild className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
                   <Link href="#contacto">
                     Solicitar información <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
