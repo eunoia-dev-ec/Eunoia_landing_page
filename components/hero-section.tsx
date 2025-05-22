@@ -61,12 +61,12 @@ export function HeroSection() {
             className="stagger-item flex flex-col sm:flex-row gap-4 justify-center mb-12"
             ref={(el) => (elementsRef.current[3] = el)}
           >
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
               <Link href="#contacto">
                 Solicita tu demo gratis <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="hover:scale-105 transition-transform duration-200">
               <Link href="#servicios">
                 Conoce nuestros servicios
               </Link>
@@ -77,19 +77,19 @@ export function HeroSection() {
             className="stagger-item grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
             ref={(el) => (elementsRef.current[4] = el)}
           >
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200">
               <MessageSquare className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-lg font-semibold mb-2">Integraciones sin código</h3>
               <p className="text-sm text-muted-foreground">Conecta tus plataformas de mensajería sin necesidad de programación.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200">
               <Bot className="h-10 w-10 text-accent mb-4" />
               <h3 className="text-lg font-semibold mb-2">IA en Español</h3>
               <p className="text-sm text-muted-foreground">Modelos optimizados para español latinoamericano y jerga local.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200">
               <Zap className="h-10 w-10 text-primary mb-4" />
               <h3 className="text-lg font-semibold mb-2">Soporte Local</h3>
               <p className="text-sm text-muted-foreground">Equipo técnico en Ecuador para implementación y soporte.</p>
