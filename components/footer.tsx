@@ -126,7 +126,7 @@ export function Footer() {
               <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
                 Política de Privacidad
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary">
                 Términos de Uso
               </Link>
             </div>
