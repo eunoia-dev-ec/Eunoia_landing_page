@@ -7,19 +7,38 @@ import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Logo } from "@/components/ui/logo";
 import { ModeToggle } from "@/components/mode-toggle";
+import { useRouter, usePathname } from "next/navigation";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const handleNavLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (pathname === "/privacy-policy" || pathname === "/terms-of-service") {
+      e.preventDefault();
+      router.push("/");
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 50); // Short delay to ensure the page is rendered before scrolling
+    }
+  };
 
   return (
     <header className={cn(
@@ -36,23 +55,42 @@ export function Navbar() {
           </div>
           
           <nav className="hidden md:flex md:space-x-6 lg:space-x-8">
-            <Link href="#servicios" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#servicios"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, "#servicios")}
+            >
               Servicios
             </Link>
-            <Link href="#como-funciona" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#como-funciona"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, "#como-funciona")}
+            >
               Cómo Funciona
             </Link>
-            <Link href="#productos" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#productos"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, "#productos")}
+            >
               Productos
             </Link>
-            <Link href="#contacto" className="text-sm font-medium hover:text-primary transition-colors">
+            <Link
+              href="#contacto"
+              className="text-sm font-medium hover:text-primary transition-colors"
+              onClick={(e) => handleNavLinkClick(e, "#contacto")}
+            >
               Contacto
             </Link>
           </nav>
           
           <div className="hidden md:block">
             <Button asChild variant="default" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
-              <Link href="#contacto">
+              <Link
+                href="#contacto"
+                onClick={(e) => handleNavLinkClick(e, "#contacto")}
+              >
                 Solicita tu demo
               </Link>
             </Button>
@@ -75,37 +113,52 @@ export function Navbar() {
         <div className="md:hidden bg-background border-b">
           <div className="container mx-auto px-4 py-4 space-y-3">
             <Link 
-              href="#servicios" 
+              href="#servicios"
               className="block text-sm font-medium hover:text-primary"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                setIsOpen(false);
+                handleNavLinkClick(e, "#servicios");
+              }}
             >
               Servicios
             </Link>
             <Link 
-              href="#como-funciona" 
+              href="#como-funciona"
               className="block text-sm font-medium hover:text-primary"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                setIsOpen(false);
+                handleNavLinkClick(e, "#como-funciona");
+              }}
             >
               Cómo Funciona
             </Link>
             <Link 
-              href="#productos" 
+              href="#productos"
               className="block text-sm font-medium hover:text-primary"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                setIsOpen(false);
+                handleNavLinkClick(e, "#productos");
+              }}
             >
               Productos
             </Link>
             <Link 
-              href="#contacto" 
+              href="#contacto"
               className="block text-sm font-medium hover:text-primary"
-              onClick={() => setIsOpen(false)}
+              onClick={(e) => {
+                setIsOpen(false);
+                handleNavLinkClick(e, "#contacto");
+              }}
             >
               Contacto
             </Link>
             <Button asChild variant="default" className="w-full mt-4 bg-primary hover:bg-primary/90">
               <Link 
-                href="#contacto"
-                onClick={() => setIsOpen(false)}
+              href="#contacto"
+              onClick={(e) => {
+                  setIsOpen(false);
+                  handleNavLinkClick(e, "#contacto");
+                }}
               >
                 Solicita tu demo
               </Link>
