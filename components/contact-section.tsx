@@ -110,10 +110,10 @@ export function ContactSection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div 
-            className="stagger-item w-full"
+            className="stagger-item w-full hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl"
             ref={(el) => (elementsRef.current[1] = el)}
           >
-            <div className="bg-card rounded-2xl shadow-md p-8 border">
+            <div className="bg-card rounded-2xl shadow-md p-8 border ">
               {isSuccess ? (
                 <div className="text-center py-12">
                   <div className="inline-flex items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30 p-4 mb-6">

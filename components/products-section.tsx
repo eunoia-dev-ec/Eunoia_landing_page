@@ -87,7 +87,10 @@ export function ProductsSection() {
               )}
               ref={(el) => (elementsRef.current[index + 1] = el)}
             >
-              <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+              <div className={cn(
+                index % 2 === 1 ? "md:col-start-2" : "",
+                "hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl p-6 rounded-2xl border bg-card"
+              )}>
                 <div className={cn(
                   "inline-flex items-center justify-center rounded-full p-3 mb-6",
                   product.bgColor
@@ -121,7 +124,7 @@ export function ProductsSection() {
               </div>
               
               <div className={cn(
-                "rounded-2xl overflow-hidden shadow-lg border",
+                "rounded-2xl overflow-hidden shadow-lg border hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl",
                 index % 2 === 1 ? "md:col-start-1" : ""
               )}>
                 <Image 

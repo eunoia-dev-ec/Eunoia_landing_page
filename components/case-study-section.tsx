@@ -49,10 +49,10 @@ export function CaseStudySection() {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div 
-            className="stagger-item"
+            className="stagger-item hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl rounded-2xl overflow-hidden"
             ref={(el) => (elementsRef.current[1] = el)}
           >
-            <div className="relative rounded-2xl overflow-hidden">
+            <div className="relative w-full h-full">
               <Image 
                 src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
                 alt="Cliente utilizando la plataforma Eunoia" 
@@ -64,11 +64,11 @@ export function CaseStudySection() {
           </div>
           
           <div 
-            className="stagger-item"
+            className="stagger-item hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl"
             ref={(el) => (elementsRef.current[2] = el)}
           >
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8">
+            <Card className="border-0 shadow-lg h-full">
+              <CardContent className="p-8 h-full flex flex-col">
                 <div className="flex gap-1 mb-6">
                   {[...Array(5)].map((_, i) => (
                     <StarIcon key={i} className="h-5 w-5 fill-yellow-400 text-yellow-400" />
