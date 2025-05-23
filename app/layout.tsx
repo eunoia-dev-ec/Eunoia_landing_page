@@ -11,6 +11,10 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Eunoia Soluciones | Tecnología que conecta y transforma',
   description: 'Automatización inteligente y chatbots omnicanal para tu negocio en Ecuador. Soluciones de WhatsApp, Instagram y Facebook Messenger para PYMEs.',
+  icons: {
+    icon: '/Logo-light.png',
+    apple: '/Logo-light.png',
+  },
 };
 
 export default function RootLayout({
