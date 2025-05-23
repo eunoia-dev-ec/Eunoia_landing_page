@@ -46,7 +46,7 @@ export function HeroSection() {
             ref={(el) => (elementsRef.current[1] = el)}
           >
             Euno<span className="text-accent">ia</span>  <br className="hidden sm:inline" />
-            <span className="text-primary">Tecnología que conecta y transforma</span>
+            <div className="block"><span className="text-primary">Tecnología que conecta y transforma</span></div>
           </h1>
           
           <p 

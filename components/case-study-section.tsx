@@ -91,7 +91,7 @@ export function CaseStudySection() {
                 </div>
                 
                 <div className="mt-8 pt-6 border-t">
-                  <div className="grid grid-cols-3 gap-4 text-center">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
                     <div>
                       <p className="text-2xl font-bold text-primary">78%</p>
                       <p className="text-sm text-muted-foreground">Reducción en tiempo de respuesta</p>
