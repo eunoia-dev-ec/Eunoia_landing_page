@@ -123,7 +123,7 @@ export function Footer() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="flex space-x-4">
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
                 Política de Privacidad
               </Link>
               <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
