@@ -108,9 +108,9 @@ export function ContactSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="">
           <div 
-            className="stagger-item"
+            className="stagger-item max-w-2xl mx-auto"
             ref={(el) => (elementsRef.current[1] = el)}
           >
             <div className="bg-card rounded-2xl shadow-md p-8 border">
@@ -219,7 +219,7 @@ export function ContactSection() {
           </div>
           
           <div 
-            className="stagger-item"
+            className="stagger-item max-w-2xl mx-auto mt-12"
             ref={(el) => (elementsRef.current[2] = el)}
           >
             <div className="space-y-8">
