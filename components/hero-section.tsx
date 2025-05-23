@@ -39,20 +39,14 @@ export function HeroSection() {
       
       <div className="container relative mx-auto px-4 md:px-6 z-10">
         <div className="max-w-5xl mx-auto text-center">
-          <div 
-            className="stagger-item inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6"
-            ref={(el) => (elementsRef.current[0] = el)}
-          >
-            <span className="flex h-2 w-2 rounded-full bg-primary"></span>
-            Innovación tecnológica para Ecuador desde 2025
-          </div>
+
           
           <h1 
             className="stagger-item text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
             ref={(el) => (elementsRef.current[1] = el)}
           >
-            Eunoia Soluciones: <br className="hidden sm:inline" />
-            <span className="text-primary">Tecnología que conecta y transforma</span>
+            Euno<span className="text-accent">ia</span>  <br className="hidden sm:inline" />
+            <div className="block"><span className="text-primary">Tecnología que conecta y transforma</span></div>
           </h1>
           
           <p 
@@ -67,12 +61,12 @@ export function HeroSection() {
             className="stagger-item flex flex-col sm:flex-row gap-4 justify-center mb-12"
             ref={(el) => (elementsRef.current[3] = el)}
           >
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
               <Link href="#contacto">
                 Solicita tu demo gratis <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="hover:scale-105 transition-transform duration-200">
               <Link href="#servicios">
                 Conoce nuestros servicios
               </Link>
@@ -83,22 +77,22 @@ export function HeroSection() {
             className="stagger-item grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto"
             ref={(el) => (elementsRef.current[4] = el)}
           >
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
-              <MessageSquare className="h-10 w-10 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Integraciones sin código</h3>
-              <p className="text-sm text-muted-foreground">Conecta tus plataformas de mensajería sin necesidad de programación.</p>
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200 flex items-center justify-center flex-col">
+              <MessageSquare className="h-10 w-10 text-primary" />
+              <h3 className="text-lg font-semibold mb-2 text-center">Integraciones sin código</h3>
+              <p className="text-sm text-muted-foreground text-center">Conecta tus plataformas de mensajería sin necesidad de programación.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
-              <Bot className="h-10 w-10 text-accent mb-4" />
-              <h3 className="text-lg font-semibold mb-2">IA en Español</h3>
-              <p className="text-sm text-muted-foreground">Modelos optimizados para español latinoamericano y jerga local.</p>
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200 flex items-center justify-center flex-col">
+              <Bot className="h-10 w-10 text-accent" />
+              <h3 className="text-lg font-semibold mb-2 text-center">IA en Español</h3>
+              <p className="text-sm text-muted-foreground text-center">Modelos optimizados para español latinoamericano y jerga local.</p>
             </div>
             
-            <div className="p-6 rounded-xl bg-card shadow-sm border">
-              <Zap className="h-10 w-10 text-primary mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Soporte Local</h3>
-              <p className="text-sm text-muted-foreground">Equipo técnico en Ecuador para implementación y soporte.</p>
+            <div className="p-6 rounded-xl bg-card shadow-sm border hover:scale-105 transition-transform duration-200 flex items-center justify-center flex-col">
+              <Zap className="h-10 w-10 text-primary" />
+              <h3 className="text-lg font-semibold mb-2 text-center">Soporte Local</h3>
+              <p className="text-sm text-muted-foreground text-center">Equipo técnico en Ecuador para implementación y soporte.</p>
             </div>
           </div>
         </div>

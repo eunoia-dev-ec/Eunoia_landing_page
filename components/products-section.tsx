@@ -87,7 +87,10 @@ export function ProductsSection() {
               )}
               ref={(el) => (elementsRef.current[index + 1] = el)}
             >
-              <div className={index % 2 === 1 ? "md:col-start-2" : ""}>
+              <div className={cn(
+                index % 2 === 1 ? "md:col-start-2" : "",
+                "hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl p-6 rounded-2xl border bg-card"
+              )}>
                 <div className={cn(
                   "inline-flex items-center justify-center rounded-full p-3 mb-6",
                   product.bgColor
@@ -113,7 +116,7 @@ export function ProductsSection() {
                   ))}
                 </ul>
                 
-                <Button asChild className="bg-primary hover:bg-primary/90">
+                <Button asChild className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
                   <Link href="#contacto">
                     Solicitar información <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -121,7 +124,7 @@ export function ProductsSection() {
               </div>
               
               <div className={cn(
-                "rounded-2xl overflow-hidden shadow-lg border",
+                "rounded-2xl overflow-hidden shadow-lg border hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl",
                 index % 2 === 1 ? "md:col-start-1" : ""
               )}>
                 <Image 

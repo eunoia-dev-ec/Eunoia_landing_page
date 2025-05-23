@@ -74,7 +74,7 @@ export function HowItWorksSection() {
           {steps.map((step, index) => (
             <div 
               key={index}
-              className="stagger-item relative z-10"
+              className="stagger-item relative z-10 hover:scale-105 transition-transform duration-200"
               ref={(el) => (elementsRef.current[index + 1] = el)}
             >
               <div className="flex flex-col items-center text-center">
@@ -82,12 +82,12 @@ export function HowItWorksSection() {
                   "flex items-center justify-center w-20 h-20 rounded-full mb-6",
                   step.bgColor
                 )}>
-                  <div className={cn("", step.color)}>
+                  <div className={cn("flex items-center justify-center", step.color)}>
                     {step.icon}
                   </div>
                 </div>
                 
-                <div className="gradient-border bg-card w-full p-6">
+                <div className="gradient-border bg-card w-full p-6 pt-12">
                   <span className="block text-lg font-semibold mb-1">Paso {index + 1}</span>
                   <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>

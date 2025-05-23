@@ -108,12 +108,12 @@ export function ContactSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div 
-            className="stagger-item"
+            className="stagger-item w-full hover:scale-[1.03] transition-transform duration-300 hover:shadow-xl"
             ref={(el) => (elementsRef.current[1] = el)}
           >
-            <div className="bg-card rounded-2xl shadow-md p-8 border">
+            <div className="bg-card rounded-2xl shadow-md p-8 border ">
               {isSuccess ? (
                 <div className="text-center py-12">
                   <div className="inline-flex items-center justify-center rounded-full bg-green-100 dark:bg-green-900/30 p-4 mb-6">
@@ -135,7 +135,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Nombre</FormLabel>
                             <FormControl>
-                              <Input placeholder="Tu nombre" {...field} />
+                              <Input placeholder="Tu nombre" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -149,7 +149,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Empresa</FormLabel>
                             <FormControl>
-                              <Input placeholder="Nombre de tu empresa" {...field} />
+                              <Input placeholder="Nombre de tu empresa" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -165,7 +165,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Email</FormLabel>
                             <FormControl>
-                              <Input placeholder="tu@email.com" {...field} />
+                              <Input placeholder="tu@email.com" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -179,7 +179,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Teléfono (opcional)</FormLabel>
                             <FormControl>
-                              <Input placeholder="+593 XXX XXX XXXX" {...field} />
+                              <Input placeholder="+593 XXX XXX XXXX" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -196,7 +196,7 @@ export function ContactSection() {
                           <FormControl>
                             <Textarea
                               placeholder="¿Qué servicios te interesan? ¿Tienes alguna pregunta específica?"
-                              className="min-h-32 resize-none"
+                              className="min-h-32 resize-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200"
                               {...field}
                             />
                           </FormControl>
@@ -207,7 +207,7 @@ export function ContactSection() {
                     
                     <Button 
                       type="submit" 
-                      className="w-full bg-primary hover:bg-primary/90"
+                      className="w-full bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200"
                       disabled={isSubmitting}
                     >
                       {isSubmitting ? "Enviando..." : "Solicitar Demo"}
@@ -219,120 +219,63 @@ export function ContactSection() {
           </div>
           
           <div 
-            className="stagger-item"
+            className="stagger-item w-full md:mt-0"
             ref={(el) => (elementsRef.current[2] = el)}
           >
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:info@eunoiasoluciones.com" className="text-muted-foreground hover:text-primary">
-                        info@eunoiasoluciones.com
+                      <a href="mailto:contacto@eunoia.click" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        contacto@eunoia.click
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Teléfono</p>
-                      <a href="tel:+59322345678" className="text-muted-foreground hover:text-primary">
-                        +593 2 234 5678
+                      <a href="tel:+593983837655" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        +593 98 383 7655
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Map className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Dirección</p>
                       <p className="text-muted-foreground">
-                        Av. 6 de Diciembre y Whymper, <br />
-                        Edif. Cosmos, Oficina 505, <br />
-                        Quito, Ecuador
+                        Pasaje B n45-52 y Av. Zamora
                       </p>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <MessageSquare className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">WhatsApp</p>
-                      <a href="https://wa.me/593987654321" className="text-muted-foreground hover:text-primary">
-                        +593 98 765 4321
+                      <a href="https://wa.me/593988512228" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        +593 98 851 2228
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
               
-              <div>
-                <h3 className="text-xl font-bold mb-4">Horario de Atención</h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Lunes - Viernes</span>
-                    <span>9:00 - 18:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sábado</span>
-                    <span>9:00 - 13:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Domingo</span>
-                    <span>Cerrado</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-card rounded-xl p-6 border">
-                <h3 className="text-xl font-bold mb-4">¿Por qué elegirnos?</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Soporte técnico local en Ecuador</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Integración con múltiples plataformas</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Soluciones personalizadas a medida</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Implementación rápida y sencilla</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>

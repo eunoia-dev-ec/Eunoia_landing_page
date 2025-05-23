@@ -97,22 +97,20 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center">
                 <span className="text-muted-foreground">Email:</span>
-                <a href="mailto:info@eunoiasoluciones.com" className="ml-2 hover:text-primary transition-colors">
-                  info@eunoiasoluciones.com
+                <a href="mailto:contacto@eunoia.click" className="ml-2 hover:text-primary transition-colors">
+                  contacto@eunoia.click
                 </a>
               </li>
               <li className="flex items-center">
                 <span className="text-muted-foreground">Teléfono:</span>
-                <a href="tel:+59322345678" className="ml-2 hover:text-primary transition-colors">
-                  +593 2 234 5678
+                <a href="tel:+593983837655" className="ml-2 hover:text-primary transition-colors">
+                  +593 98 383 7655
                 </a>
               </li>
               <li className="flex flex-col">
                 <span className="text-muted-foreground">Dirección:</span>
                 <span className="text-sm">
-                  Av. 6 de Diciembre y Whymper, <br />
-                  Edif. Cosmos, Oficina 505, <br />
-                  Quito, Ecuador
+                  Pasaje B n45-52 y Av. Zamora
                 </span>
               </li>
             </ul>
@@ -125,10 +123,10 @@ export function Footer() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 items-center">
             <div className="flex space-x-4">
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">
                 Política de Privacidad
               </Link>
-              <Link href="#" className="text-sm text-muted-foreground hover:text-primary">
+              <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary">
                 Términos de Uso
               </Link>
             </div>

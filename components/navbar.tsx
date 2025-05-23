@@ -27,10 +27,11 @@ export function Navbar() {
       isScrolled ? "bg-background/95 backdrop-blur-md border-b" : "bg-transparent"
     )}>
       <div className="container mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-20 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
+              <span className="text-xl font-bold leading-tight">Euno<span className="text-accent">IA</span></span>
             </Link>
           </div>
           
@@ -47,11 +48,10 @@ export function Navbar() {
             <Link href="#contacto" className="text-sm font-medium hover:text-primary transition-colors">
               Contacto
             </Link>
-            <ModeToggle />
           </nav>
           
           <div className="hidden md:block">
-            <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+            <Button asChild variant="default" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
               <Link href="#contacto">
                 Solicita tu demo
               </Link>
@@ -59,7 +59,6 @@ export function Navbar() {
           </div>
           
           <div className="flex items-center space-x-4 md:hidden">
-            <ModeToggle />
             <button 
               className="p-2"
               onClick={() => setIsOpen(!isOpen)}

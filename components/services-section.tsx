@@ -98,12 +98,12 @@ export function ServicesSection() {
             <div 
               key={index}
               className={cn(
-                "stagger-item rounded-2xl p-6 border transition-all duration-300 hover:shadow-md",
+                "stagger-item rounded-2xl p-6 border transition-all duration-300 hover:shadow-md hover:scale-105",
                 service.className
               )}
               ref={(el) => (elementsRef.current[index + 1] = el)}
             >
-              <div className={cn("rounded-full p-3 inline-flex mb-6", service.iconClass)}>
+              <div className={cn("rounded-full p-3 inline-flex flex items-center justify-center flex-col", service.iconClass)}>
                 {service.icon}
               </div>
               
@@ -132,7 +132,7 @@ export function ServicesSection() {
           className="stagger-item text-center"
           ref={(el) => (elementsRef.current[4] = el)}
         >
-          <Button asChild variant="default" className="bg-primary hover:bg-primary/90">
+          <Button asChild variant="default" className="bg-primary hover:bg-primary/90 hover:scale-105 transition-transform duration-200">
             <Link href="#contacto">
               Solicita una demostración personalizada
             </Link>
