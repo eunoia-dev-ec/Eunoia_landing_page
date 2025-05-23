@@ -31,6 +31,7 @@ export function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center space-x-2">
               <Logo />
+              <span className="text-xl font-bold leading-tight">Euno<span className="text-accent">IA</span></span>
             </Link>
           </div>
           

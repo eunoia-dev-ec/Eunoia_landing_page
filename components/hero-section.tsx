@@ -45,7 +45,7 @@ export function HeroSection() {
             className="stagger-item text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6"
             ref={(el) => (elementsRef.current[1] = el)}
           >
-            Eunoia Soluciones: <br className="hidden sm:inline" />
+            Euno<span className="text-accent">ia</span>  <br className="hidden sm:inline" />
             <span className="text-primary">Tecnología que conecta y transforma</span>
           </h1>
           
