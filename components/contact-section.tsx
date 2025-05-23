@@ -108,9 +108,9 @@ export function ContactSection() {
           </p>
         </div>
         
-        <div className="">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           <div 
-            className="stagger-item max-w-2xl mx-auto"
+            className="stagger-item w-full"
             ref={(el) => (elementsRef.current[1] = el)}
           >
             <div className="bg-card rounded-2xl shadow-md p-8 border">
@@ -219,7 +219,7 @@ export function ContactSection() {
           </div>
           
           <div 
-            className="stagger-item max-w-2xl mx-auto mt-12"
+            className="stagger-item w-full md:mt-0"
             ref={(el) => (elementsRef.current[2] = el)}
           >
             <div className="space-y-8">
@@ -278,61 +278,6 @@ export function ContactSection() {
                 </div>
               </div>
               
-              <div>
-                <h3 className="text-xl font-bold mb-4">Horario de Atención</h3>
-                <div className="space-y-2">
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Lunes - Viernes</span>
-                    <span>9:00 - 18:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Sábado</span>
-                    <span>9:00 - 13:00</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-muted-foreground">Domingo</span>
-                    <span>Cerrado</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="bg-card rounded-xl p-6 border">
-                <h3 className="text-xl font-bold mb-4">¿Por qué elegirnos?</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Soporte técnico local en Ecuador</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Integración con múltiples plataformas</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Soluciones personalizadas a medida</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-1 mr-3">
-                      <svg className="h-3 w-3 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                    </div>
-                    <span className="text-sm">Implementación rápida y sencilla</span>
-                  </li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
