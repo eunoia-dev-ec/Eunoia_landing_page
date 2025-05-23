@@ -232,8 +232,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:info@eunoiasoluciones.com" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
-                        info@eunoiasoluciones.com
+                      <a href="mailto:contacto@eunoia.click" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        contacto@eunoia.click
                       </a>
                     </div>
                   </div>
@@ -244,8 +244,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium">Teléfono</p>
-                      <a href="tel:+59322345678" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
-                        +593 2 234 5678
+                      <a href="tel:+593983837655" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        +593 98 383 7655
                       </a>
                     </div>
                   </div>
@@ -257,9 +257,7 @@ export function ContactSection() {
                     <div>
                       <p className="font-medium">Dirección</p>
                       <p className="text-muted-foreground">
-                        Av. 6 de Diciembre y Whymper, <br />
-                        Edif. Cosmos, Oficina 505, <br />
-                        Quito, Ecuador
+                        Pasaje B n45-52 y Av. Zamora
                       </p>
                     </div>
                   </div>
@@ -270,8 +268,8 @@ export function ContactSection() {
                     </div>
                     <div>
                       <p className="font-medium">WhatsApp</p>
-                      <a href="https://wa.me/593987654321" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
-                        +593 98 765 4321
+                      <a href="https://wa.me/593988512228" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
+                        +593 98 851 2228
                       </a>
                     </div>
                   </div>
