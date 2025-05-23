@@ -135,7 +135,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Nombre</FormLabel>
                             <FormControl>
-                              <Input placeholder="Tu nombre" {...field} />
+                              <Input placeholder="Tu nombre" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -149,7 +149,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Empresa</FormLabel>
                             <FormControl>
-                              <Input placeholder="Nombre de tu empresa" {...field} />
+                              <Input placeholder="Nombre de tu empresa" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -165,7 +165,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Email</FormLabel>
                             <FormControl>
-                              <Input placeholder="tu@email.com" {...field} />
+                              <Input placeholder="tu@email.com" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -179,7 +179,7 @@ export function ContactSection() {
                           <FormItem>
                             <FormLabel>Teléfono (opcional)</FormLabel>
                             <FormControl>
-                              <Input placeholder="+593 XXX XXX XXXX" {...field} />
+                              <Input placeholder="+593 XXX XXX XXXX" {...field} className="focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200" />
                             </FormControl>
                             <FormMessage />
                           </FormItem>
@@ -196,7 +196,7 @@ export function ContactSection() {
                           <FormControl>
                             <Textarea
                               placeholder="¿Qué servicios te interesan? ¿Tienes alguna pregunta específica?"
-                              className="min-h-32 resize-none"
+                              className="min-h-32 resize-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow duration-200"
                               {...field}
                             />
                           </FormControl>
@@ -226,32 +226,32 @@ export function ContactSection() {
               <div>
                 <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Mail className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <a href="mailto:info@eunoiasoluciones.com" className="text-muted-foreground hover:text-primary">
+                      <a href="mailto:info@eunoiasoluciones.com" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
                         info@eunoiasoluciones.com
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Phone className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">Teléfono</p>
-                      <a href="tel:+59322345678" className="text-muted-foreground hover:text-primary">
+                      <a href="tel:+59322345678" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
                         +593 2 234 5678
                       </a>
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <Map className="h-5 w-5 text-primary" />
                     </div>
                     <div>
@@ -264,13 +264,13 @@ export function ContactSection() {
                     </div>
                   </div>
                   
-                  <div className="flex items-start">
-                    <div className="rounded-full bg-primary/10 p-2 mr-4">
+                  <div className="group flex items-start p-3 rounded-lg hover:bg-primary/5 hover:scale-[1.02] transition-all duration-200">
+                    <div className="rounded-full bg-primary/10 p-2 mr-4 group-hover:scale-110 transition-transform duration-200">
                       <MessageSquare className="h-5 w-5 text-primary" />
                     </div>
                     <div>
                       <p className="font-medium">WhatsApp</p>
-                      <a href="https://wa.me/593987654321" className="text-muted-foreground hover:text-primary">
+                      <a href="https://wa.me/593987654321" className="text-muted-foreground group-hover:text-primary transition-colors duration-200">
                         +593 98 765 4321
                       </a>
                     </div>
